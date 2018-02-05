@@ -1,9 +1,9 @@
 //
 //  ViewController.h
-//  SocialProject
+//  Social
 //
-//  Created by Haotian Chen on 2017/8/17.
-//  Copyright © 2017年 Haotian Chen. All rights reserved.
+//  Created by Li, Ally on 6/24/17.
+//  Copyright © 2017 ninglinli. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

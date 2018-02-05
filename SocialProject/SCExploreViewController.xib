@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SCExploreViewController">
+            <connections>
+                <outlet property="mapView" destination="M60-Fc-VfS" id="gxm-17-9Em"/>
+                <outlet property="reloadButton" destination="HWb-BD-gyX" id="NDR-d5-kg3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="M60-Fc-VfS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWb-BD-gyX">
+                    <rect key="frame" x="97.5" y="507" width="180" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="M0G-hI-G1f"/>
+                        <constraint firstAttribute="height" constant="40" id="kVB-1N-xTu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <state key="normal" title="Search This Area">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HWb-BD-gyX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3dR-oA-cwt"/>
+                <constraint firstAttribute="bottom" secondItem="HWb-BD-gyX" secondAttribute="bottom" constant="120" id="Dvf-Rc-qzc"/>
+                <constraint firstAttribute="trailing" secondItem="M60-Fc-VfS" secondAttribute="trailing" id="GyM-4M-wgh"/>
+                <constraint firstItem="M60-Fc-VfS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U9Q-vL-ozS"/>
+                <constraint firstAttribute="bottom" secondItem="M60-Fc-VfS" secondAttribute="bottom" id="hne-Q6-02e"/>
+                <constraint firstItem="M60-Fc-VfS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ld0-eH-z4k"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
